@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Forget page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+            <h1 style="font-size:40" class="heading" >Facebook</h1><br>
+         <form class="forget">  
+         <div>
+        
+        <h3>Find Your Account</h3><br>
+        <hr><br>
+        <p>Please enter your email address or mobile number to search for your account.</p><br>
+        <input type="email" placeholder="Email address or mobile number" required class="input-field"><br><br><hr>
+        <input type="submit" class="size" value="  Cancel  ">
+        <button type="submit" onclick="showMessage()" class="" >Search</button><br><br>
+        <a href="index.html" class="">back to login</a>
+        </div>
+        </form>
+        <script>
+            function showMessage() {
+                // Get the input field value
+                var inputFieldValue = document.querySelector('.input-field').value;
+    
+                // Check if the input field is not empty
+                if (inputFieldValue.trim() !== '') {
+                    alert('Searching for account with: ' + inputFieldValue);
+                } else {
+                    alert('Please enter your email address or mobile number.');
+                }
+            }
+        </script>
+    </body>
+</html>
