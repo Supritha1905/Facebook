@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+        <h1 style="font-size:40" class="heading" >Facebook</h1><br>
+        
+    
+    <div>
+        <form class="sign">
+            <h2>Create New Account</h2><br>
+            <p>It's quick and easy.</p><br>
+            <hr><br>
+        
+
+            <input type="text" placeholder="Firstname" required class="input-field">
+            <input type="text" placeholder="Lastname" required class="input-field">
+            <input type="Email" placeholder="Mobile number or email address" required class="input-field">
+            <input type="Password" placeholder="New password"required class="input-field">
+            <div class="left-align">
+            <p>Date of birth?<p>
+            <input type="number" class="same-size" placeholder="Date" name="day" min="1" max="31" required>
+            <input type="number" class="same-size" placeholder="month" min="1" max="12" required>
+            <input type="number" class="same-size" placeholder="year" min="1900" max="2099" required>
+            
+            <p>Gender?</p> 
+            <div class="side-by">
+            <input type="radio" class="gender" name="gender" value="male"> Male
+            <input type="radio" class="gender" name="gender" value="female"> Female
+            <input type="radio" class="gender"  name="gender" value="other"> others
+            </div>
+            </div>
+            <br>
+            <button type="submit" class="new-signup" >Sign Up</button><br>
+            <a href="index.html" class="">Already have an account?</a> 
+            </form>
+    </div>
+</body>
+</html>
